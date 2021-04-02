@@ -1,0 +1,11 @@
+$black: #000;
+$white: #fff;
+
+* {
+    font-family: 'Roboto Slab', serif !important;
+    color: $white;
+}
+
+body{
+    background-color: $black;
+}

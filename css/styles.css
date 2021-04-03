@@ -103,9 +103,11 @@ footer {
     background-color: #fff;
     top: 50%; }
 
-.home article {
-  padding-top: 102px; }
-  .home article .typed-cursor {
-    font-size: 2rem; }
+.home {
+  min-height: 94vh; }
+  .home article {
+    padding-top: 102px; }
+    .home article .typed-cursor {
+      font-size: 2rem; }
 
 /*# sourceMappingURL=styles.css.map */

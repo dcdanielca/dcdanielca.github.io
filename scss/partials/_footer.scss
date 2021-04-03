@@ -1,0 +1,52 @@
+footer{
+    position: relative;
+    .bg-black{
+        width: 248px;
+        height: 100%;   
+        position: absolute;
+        z-index: 1;
+    }
+    .social-icons{
+        width: auto;
+        a{
+            z-index: 2;
+            width: auto !important;
+            margin: 0 15px;
+            svg{
+                height: 32px;
+                fill: $white;
+                transition: all .3s ease-in-out;
+            }
+            &:hover{
+                &.facebook{
+                    svg{
+                        fill: #3b5998;
+                    }
+                }
+                &.instagram{
+                    svg{
+                        fill: #C13584;
+                    }
+                }
+                &.github{
+                    svg{
+                        fill: $gray;
+                    }
+                }
+                &.linkedin{
+                    svg{
+                        fill: #0e76a8;
+                    }
+                }
+            }
+        }
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: $white;
+        top: 50%;
+    }
+}

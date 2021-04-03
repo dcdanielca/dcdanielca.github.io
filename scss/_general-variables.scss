@@ -1,11 +1,49 @@
 $black: #000;
 $white: #fff;
+$blue-middle: rgb(75, 138, 196);
+$gray: rgb(54, 52, 52);
 
 * {
     font-family: 'Roboto Slab', serif !important;
     color: $white;
 }
 
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+  }
+
 body{
     background-color: $black;
+}
+
+.bg{
+    &-black{
+        background-color: $black;
+    }
+}
+
+$font-12: calculateRem(12px);
+$font-14: calculateRem(14px);
+$font-16: calculateRem(16px);
+$font-20: calculateRem(20px);
+$font-58: calculateRem(58px);
+
+
+.font{
+    &-12{
+        font-size: $font-12;
+    }
+    &-14{
+        font-size: $font-14;
+    }
+    &-16{
+        font-size: $font-16;
+    }
+    &-20{
+        font-size: $font-20;
+    }
+    &-58{
+        font-size: $font-58;
+    }
 }

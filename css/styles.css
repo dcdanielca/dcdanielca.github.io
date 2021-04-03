@@ -68,7 +68,7 @@ header {
         bottom: 0; }
   @media (max-width: 592px) {
     header .navbar-brand img {
-      max-width: 400px; } }
+      max-width: 60vw; } }
 
 footer {
   position: relative; }

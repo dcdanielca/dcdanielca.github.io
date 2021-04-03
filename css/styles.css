@@ -22,7 +22,8 @@ body {
 header {
   background-color: #363434;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
   header nav li a {
     color: #fff;
     position: relative; }
@@ -103,8 +104,7 @@ footer {
     top: 50%; }
 
 .home article {
-  padding-top: 102px;
-  height: 90vh; }
+  padding-top: 102px; }
   .home article .typed-cursor {
     font-size: 2rem; }
 

@@ -1,0 +1,43 @@
+.contact{
+    form{
+        border: solid 1px $white;
+        background-color: $blue-dark;
+        max-width: 700px;
+        margin: auto;
+        input, textarea{
+            width: 100%;
+            background-color: transparent;
+            border: unset;
+            border-bottom: solid 1px $white;
+            transition: all .3s linear;
+            &::placeholder{
+                color: $white;
+            }
+            &:focus{
+                outline: unset;
+                background-color: $gray;
+                &::placeholder{
+                    color: transparent;
+                }
+            }
+        }
+        textarea{
+            min-height: 120px;
+        }
+        button{
+            padding: 10px 20px;
+            margin: auto;
+            display: block;
+            background-color: $black;
+            font-size: $font-18;
+            border: solid 1px $white;
+            transition: all .3s ease-in-out;
+            position: relative;
+            &:hover{
+                color: $black;
+                border: solid 1px $black;
+                background-color: $white;
+            }
+        }
+    }
+}

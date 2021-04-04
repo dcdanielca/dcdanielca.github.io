@@ -1,6 +1,7 @@
 $black: #000;
 $white: #fff;
 $blue-middle: rgb(75, 138, 196);
+$blue-dark: rgb(6, 2, 20);
 $gray: rgb(54, 52, 52);
 
 * {
@@ -26,6 +27,7 @@ body{
 $font-12: calculateRem(12px);
 $font-14: calculateRem(14px);
 $font-16: calculateRem(16px);
+$font-18: calculateRem(18px);
 $font-20: calculateRem(20px);
 $font-58: calculateRem(58px);
 
@@ -40,10 +42,24 @@ $font-58: calculateRem(58px);
     &-16{
         font-size: $font-16;
     }
+    &-18{
+        font-size: $font-18;
+    }
     &-20{
         font-size: $font-20;
     }
     &-58{
         font-size: $font-58;
+    }
+}
+
+
+body{
+    min-height: 94vh;
+    article{
+        padding-top: 102px;
+        .typed-cursor{
+            font-size: 2rem;
+        }
     }
 }

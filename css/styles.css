@@ -14,10 +14,19 @@ body {
   font-size: 0.875rem; }
 .font-16 {
   font-size: 1rem; }
+.font-18 {
+  font-size: 1.125rem; }
 .font-20 {
   font-size: 1.25rem; }
 .font-58 {
   font-size: 3.625rem; }
+
+body {
+  min-height: 94vh; }
+  body article {
+    padding-top: 102px; }
+    body article .typed-cursor {
+      font-size: 2rem; }
 
 header {
   background-color: #363434;
@@ -103,11 +112,38 @@ footer {
     background-color: #fff;
     top: 50%; }
 
-.home {
-  min-height: 94vh; }
-  .home article {
-    padding-top: 102px; }
-    .home article .typed-cursor {
-      font-size: 2rem; }
+.contact form {
+  border: solid 1px #fff;
+  background-color: #060214;
+  max-width: 700px;
+  margin: auto; }
+  .contact form input, .contact form textarea {
+    width: 100%;
+    background-color: transparent;
+    border: unset;
+    border-bottom: solid 1px #fff;
+    transition: all .3s linear; }
+    .contact form input::placeholder, .contact form textarea::placeholder {
+      color: #fff; }
+    .contact form input:focus, .contact form textarea:focus {
+      outline: unset;
+      background-color: #363434; }
+      .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+        color: transparent; }
+  .contact form textarea {
+    min-height: 120px; }
+  .contact form button {
+    padding: 10px 20px;
+    margin: auto;
+    display: block;
+    background-color: #000;
+    font-size: 1.125rem;
+    border: solid 1px #fff;
+    transition: all .3s ease-in-out;
+    position: relative; }
+    .contact form button:hover {
+      color: #000;
+      border: solid 1px #000;
+      background-color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */

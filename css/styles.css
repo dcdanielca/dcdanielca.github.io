@@ -70,11 +70,14 @@ header {
       height: 3px;
       background-color: #fff; }
       header nav .navbar-toggler-icon span:nth-child(1) {
-        top: 0; }
+        top: 0;
+        left: 0; }
       header nav .navbar-toggler-icon span:nth-child(2) {
-        top: 48%; }
+        top: 48%;
+        left: 0; }
       header nav .navbar-toggler-icon span:nth-child(3) {
-        bottom: 0; }
+        bottom: 0;
+        left: 0; }
   @media (max-width: 592px) {
     header .navbar-brand img {
       max-width: 60vw; } }
@@ -112,6 +115,28 @@ footer {
     background-color: #fff;
     top: 50%; }
 
+body.about-me article p:nth-of-type(1) span:nth-of-type(1) {
+  animation: colorBlue 4s ease-in 0.5s infinite; }
+body.about-me article p:nth-of-type(1) span:nth-of-type(2) {
+  animation: colorBlue 6s ease-in 3s infinite; }
+body.about-me article p:nth-of-type(2) span:nth-of-type(1) {
+  animation: colorBlue 8s ease-in 6s infinite; }
+body.about-me article p:nth-of-type(3) span:nth-of-type(1) {
+  animation: colorBlue 10s ease-in 9s infinite; }
+body.about-me article p:nth-of-type(4) span:nth-of-type(1) {
+  animation: colorBlue 12s ease-in 12s infinite; }
+body.about-me article span {
+  position: relative;
+  text-decoration: underline; }
+  body.about-me article span:after {
+    position: absolute;
+    content: ""; }
+
+@keyframes colorBlue {
+  0%, 10% {
+    color: #fff; }
+  80% {
+    color: #4b8ac4; } }
 .contact form {
   border: solid 1px #fff;
   background-color: #060214;

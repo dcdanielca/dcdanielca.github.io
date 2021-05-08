@@ -1,0 +1,29 @@
+window.onload = function(){
+    AOS.init()
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        autoplay: true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            900:{
+                items:3
+            },
+            1100:{
+                items:4
+            },
+            1400:{
+                items:5
+            },
+            1600:{
+                items:6
+            }
+        }
+    })
+}
